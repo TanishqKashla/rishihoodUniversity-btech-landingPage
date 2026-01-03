@@ -250,7 +250,7 @@ body {
 /* ========== PROGRAM EXPERIENCE SECTION ========== */
 .program-experience-section {
   background: white;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +370,7 @@ body {
 
 .hide-on-phone {
   /* By default, show the element */
-  display: block;
+ 
 }
 
 /* Media query to target screens smaller than 640px (a common mobile breakpoint) */
@@ -417,6 +417,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1rem 2rem;
+  background-color: #faf8f4;
 }
 
 @media (min-width: 640px) {
@@ -582,7 +583,7 @@ body {
 }
 
 .curriculum-content-box {
-  background: #faf8f4;
+  background: #ffffff;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 1.5rem;
@@ -1265,6 +1266,7 @@ body {
   .partners-category-title {
     font-size: 32px;
     margin-bottom: 40px;
+    margin-top: 24px;
   }
 }
 
@@ -1288,6 +1290,22 @@ body {
   }
 }
 
+.guest-partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .guest-partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0px;
+  }
+}
+
 .partner-card {
   background: white;
   border: 1px solid #6b7280;
@@ -1304,6 +1322,7 @@ body {
 @media (min-width: 768px) {
   .partner-card {
     max-width: 140px;
+    padding: 16px 8px;
   }
 }
 
@@ -1669,7 +1688,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #faf8f4;
-  padding: 16px;
+  padding: 28px 16px 16px 16px;
 }
 
 @media (min-width: 768px) {
@@ -1801,7 +1820,8 @@ body {
 .exposure-heading {
   color: var(--brand-red);
   font-weight: 700;
-  font-size: 1.45rem;
+  font-size: 1.7rem;
+  line-height: 1.3;
   margin-bottom: 0.5rem;
 }
 
@@ -1846,7 +1866,7 @@ body {
 .exposure-image {
   width: 100%;
   display: block;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 5 / 3;
   object-fit: cover;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
@@ -2403,11 +2423,12 @@ body {
 
 .section-title {
   color: #cc0033;
-  font-size: 38px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   padding: 0 16px;
   margin-bottom: 24px;
+  line-height: 1.3;
 }
 
 @media (min-width: 1024px) {
@@ -2861,10 +2882,10 @@ body {
     padding: 0;
   }
 
-  .student-testimonials-section .section-title {
+  /* .student-testimonials-section .section-title {
     padding: 0 20px;
     margin-bottom: 20px;
-  }
+  } */
 
   .testimonials-container {
     flex-wrap: nowrap;
@@ -2965,7 +2986,7 @@ body {
   }
 
   .student-testimonials-section .section-title {
-    padding: 0 16px;
+    padding: 0 32px;
   }
 
   .testimonials-container {
@@ -3063,13 +3084,13 @@ body {
   justify-content: center;
 }
 
-.internship-section .section-title {
+/* .internship-section .section-title {
   text-align: center;
   margin-bottom: 30px;
   font-size: 2.5rem;
   font-weight: 700;
   color: #cc0033;
-}
+} */
 
 .internship-companies {
   display: grid;
@@ -3123,10 +3144,10 @@ body {
     padding: 60px 20px;
   }
 
-  .internship-section .section-title {
+  /* .internship-section .section-title {
     font-size: 2rem;
     margin-bottom: 40px;
-  }
+  } */
 
   .internship-companies {
     grid-template-columns: repeat(3, 1fr);
@@ -3148,10 +3169,10 @@ body {
     padding: 40px 16px;
   }
 
-  .internship-section .section-title {
+  /* .internship-section .section-title {
     font-size: 2.5rem;
     margin-bottom: 30px;
-  }
+  } */
 
   .internship-companies {
     grid-template-columns: repeat(3, 1fr);
@@ -3190,14 +3211,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.tools-macbook-section .section-title {
-  color: #cc0033;
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  font-weight: 700;
 }
 
 .tools-macbook-container {
@@ -3289,10 +3302,7 @@ body {
     padding: 60px 20px;
   }
 
-  .tools-macbook-section .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-  }
+  
 
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -3321,10 +3331,7 @@ body {
     padding: 40px 15px;
   }
 
-  .tools-macbook-section .section-title {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-  }
+ 
 
   .tools-grid {
     gap: 10px;
@@ -3615,19 +3622,13 @@ body {
   padding: 0 24px;
 }
 
-.career-paths-section .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #cc0033;
-}
 
 .career-paths-image-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .career-paths-image {
@@ -3643,10 +3644,7 @@ body {
     padding: 40px 0;
   }
 
-  .career-paths-section .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-  }
+  
 
   .career-paths-section .container {
     padding: 0 16px;
@@ -3658,10 +3656,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  .career-paths-section .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
+  
 
   .career-paths-section {
     padding: 30px 0;
@@ -4125,7 +4120,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-section {
-    background-image: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/Group+5515+(1).png");
+    background-image: url("assets/hero_phone.png");
   }
 
   .hero-content {
