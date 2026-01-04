@@ -4126,13 +4126,28 @@ body {
   .hero-content {
     background-position: bottom center;
     justify-content: flex-start;
-
+    padding: 64px 28px;
     font-size: 1rem !important;
   }
 
   .hero-heading {
-    font-size: 2.4rem !important;
+    font-size: 2.2rem !important;
     padding-bottom: 0.2rem;
+    padding-left: 0px !important;
+    border-bottom: 1px solid #ffffff !important;
+  }
+
+  .hero-subtext-wrapper {
+    padding-left: 0px !important;
+    max-width: 90%;
+  }
+
+  .hero-subtext{
+    font-size: 1.5rem !important;
+  }
+
+  .hero-button-wrapper{
+    margin-top: 2rem !important;
   }
 }
 
@@ -4236,13 +4251,13 @@ body {
   text-align: center;
   color: white;
   padding: 12px 8px;
-  min-width: 170px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
-  max-width: 170px;
+
 }
 
 .hero-info-icon {
