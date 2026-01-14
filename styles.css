@@ -4082,7 +4082,7 @@ body {
   /* background: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BBB_Landing/assets/hero.webp"); */
   background-image: url("assets/btech_hero.png");
   background-size: cover;
-  background-position: right top;
+  background-position: center center;
   background-repeat: no-repeat;
   min-height: 99vh;
   display: flex;
