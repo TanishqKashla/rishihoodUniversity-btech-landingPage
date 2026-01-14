@@ -2743,10 +2743,11 @@ body {
 /* Student Testimonials Section */
 .student-testimonials-section {
   background: white;
-  padding: 20px 0;
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 0px;
+  padding: 0 0 2rem 0;
 }
 
 .testimonials-container {
@@ -2780,7 +2781,7 @@ body {
 
 .testimonial-card.active {
   min-width: 700px;
-  width:100%;
+  width: -webkit-fill-available;
   height: 400px;
 }
 
@@ -2872,28 +2873,36 @@ body {
 
 @media (max-width: 768px) {
 
+  /* .study-trek-section .section-title {
+    font-size: 32px;
+    padding: 0 40px;
+  } */
+
   /* Mobile Testimonials Section */
   .student-testimonials-section {
-    padding: 40px 0;
+    padding: 0px 0;
     overflow: hidden;
+    margin-top: 40px;
   }
 
   .student-testimonials-section .container {
     padding: 0;
   }
 
-  /* .student-testimonials-section .section-title {
-    padding: 0 20px;
-    margin-bottom: 20px;
-  } */
+  .student-testimonials-section .section-title {
+    max-width: 80%;
+    margin: 0 auto;
+
+  }
 
   .testimonials-container {
     flex-wrap: nowrap;
     display: flex;
     gap: 20px;
     overflow-x: auto;
-   scroll-snap-type: x mandatory;
-    padding: 10px 20px 20px 20px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
     justify-content: flex-start;
     margin: 0;
   }
@@ -2981,17 +2990,16 @@ body {
 
   /* Small Mobile Testimonials */
   .student-testimonials-section {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 
-  .student-testimonials-section .section-title {
-    padding: 0 32px;
-  }
+  /* .student-testimonials-section .section-title {
+    padding: 0 16px;
+  } */
 
   .testimonials-container {
     gap: 6px;
-    padding: 10px 0px;
-    padding-left: 10px;
+    padding: 10px 20px;
   }
 
   .testimonial-card {
@@ -3002,8 +3010,8 @@ body {
     display: flex !important;
     cursor: grab;
     pointer-events: auto;
-    height: auto;
-    min-height: 10px !important;
+    height: 180px;
+    min-height: 180px;
   }
 
   .testimonial-card.active {
@@ -3050,14 +3058,14 @@ body {
   }
 
   .testimonial-card .testimonial-text {
-    font-size: 15px;
+    font-size: 11px;
     line-height: 1.5;
     margin-bottom: 10px;
     display: block !important;
     opacity: 1 !important;
-    /* display: -webkit-box;
+    display: -webkit-box;
     -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical; */
+    -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
@@ -4082,7 +4090,7 @@ body {
   /* background: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BBB_Landing/assets/hero.webp"); */
   background-image: url("assets/btech_hero.png");
   background-size: cover;
-  background-position: center center;
+  background-position: right center;
   background-repeat: no-repeat;
   min-height: 99vh;
   display: flex;
@@ -4106,7 +4114,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    background-image: url("assets/btech_hero.png");
+    background-image: url("assets/hero_phone.png");
     background-size: cover;
     background-position: right right;
     background-repeat: no-repeat;
@@ -4221,7 +4229,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center bottom;
 }
 
 .hero-info-content {
@@ -4281,7 +4289,7 @@ body {
   .hero-section {
     background: url("assets/btech_hero.png");
     background-size: cover;
-    background-position: center top;
+    background-position: right top;
     background-repeat: no-repeat;
     height: 102vh;
     justify-content: center;
